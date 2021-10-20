@@ -226,8 +226,7 @@ assert_parameters(Opts) when is_map(Opts) ->
 ets_settings() ->
     [set, public,
      {read_concurrency, true},
-     {write_concurrency, true},
-     {decentralized_counters, true}].
+     {write_concurrency, true}].
 
 %% @private
 -spec handle_call(any(), pid(), #cache_state{}) -> {reply, ok, #cache_state{}}.
